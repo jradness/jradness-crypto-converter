@@ -4,5 +4,8 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apikey: '9AB4C35C-283A-459E-AEBA-CF6AC5D0B453',
+  base_url: 'https://rest.coinapi.io/v1/exchangerate',
 };
+

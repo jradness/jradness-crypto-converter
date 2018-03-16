@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="converter-wrapper">
+    <img class="crypto-icon" [src]="imgURL">
+    <p class="crypto-title">{{title}}</p>
+    <form (ngSubmit)="convertClick()" #covertForm="ngForm">
+    <div class="radio-wrapper">
+      <label>
+      <input type="radio" (change)="updateSelected(1)" [(ngModel)]="cryptoType"  name="currencyType" [value]="URL_BTC">BTC
+      </label>
+      <label>
+      <input type="radio" (change)="updateSelected(2)" [(ngModel)]="cryptoType" name="currencyType" [value]="URL_ETH">ETH
+      </label>
+    </div>
+      <div class="wrapper">
+        <input type="number"  [(ngModel)]="userAmountEntered" placeholder="Crypto Amount" id="crypto" name="crypto">
+        <input type="number"  [(ngModel)]="coinValue" placeholder="USD VALUE" id="usd" name="usd">
+        <div class="btn-wrapper">
+          <button type="submit">Convert</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

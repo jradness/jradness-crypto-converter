@@ -1,0 +1,54 @@
+.converter-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .crypto-icon {
+    width: 75px;
+    align-self: center;
+  }
+  .crypto-title {
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+  }
+  .radio-wrapper {
+    display: flex;
+    justify-content: center;
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    input {
+      align-self: center;
+      margin: 10px;
+    }
+  }
+  .wrapper {
+    display: block;
+    input {
+      display: block;
+      margin: .5rem auto;
+      padding: .5rem;
+      font-size: .7rem;
+    }
+    .btn-wrapper {
+      display: flex;
+      justify-content: center;
+      button {
+        align-self: center;
+        color: white;
+        background-color: dodgerblue;
+        padding: .5rem 2rem;
+        border: 1px solid dodgerblue;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: .8rem;
+        &:hover {
+          filter: brightness(110%);
+        }
+      }
+    }
+  }
+}
+
