@@ -1,12 +1,11 @@
-import { Injectable, Input } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { API_KEY, URL_COIN_API } from '../util/constants';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class CoinApiService {
-  @Input() asset_id_base: string;
-  @Input() rate: number;
+  rate: number;
 
   constructor(private http: HttpClient) {}
 
